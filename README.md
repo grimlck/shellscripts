@@ -12,3 +12,12 @@ Change **ST_BASE** and **DROPBOX** to match your Sublime Text and Dropbox folder
         Usage: backup_st_settings.sh <backup|restore>
 
 The idea is borrowed from <https://github.com/miohtama/ztanesh/blob/master/zsh-scripts/bin/setup-sync-sublime-over-dropbox.sh>
+
+## ssh_proxy.sh
+Establish a SOCKS proxy with OpenSSH's port forwarding ability. Run the script and use 127.0.0.1:1080 in your application's proxy settings.
+
+    # Start proxy
+    ssh_proxy.sh user@host start
+
+    # Stop proxy
+    ssh_proxy.sh stop
