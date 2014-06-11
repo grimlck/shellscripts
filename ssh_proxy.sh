@@ -1,5 +1,5 @@
 #!/bin/bash
-#.name		homeproxy.sh
+#.name		ssh_proxy.sh
 #.version	0.2
 #.coder		grim
 #.date		20110803
