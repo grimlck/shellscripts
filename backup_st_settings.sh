@@ -32,7 +32,7 @@ case $1 in
 [Bb]ackup)
     # rsync settings to Dropbox
     echo "rsyncing settings to Dropbox..."
-    rsync -aud $ST_PACKAGES $ST_INSTALLED_PACKAGES $BACKUP_TARGET && echo "Done."
+    rsync -aP --delete --exclude=".DS_Store" --delete-excluded $ST_PACKAGES $ST_INSTALLED_PACKAGES $BACKUP_TARGET && echo "Done."
     ;;
 [Rr]estore)
     # rsync settings from Dropbox
